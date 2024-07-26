@@ -1,4 +1,4 @@
-module github.com/IBM/sarama
+module github.com/awesomeUA/sarama
 
 go 1.19
 
@@ -34,8 +34,8 @@ require (
 )
 
 retract (
-	v1.32.0 // producer hangs on retry https://github.com/IBM/sarama/issues/2150
-	[v1.31.0, v1.31.1] // producer deadlock https://github.com/IBM/sarama/issues/2129
-	[v1.26.0, v1.26.1] // consumer fetch session allocation https://github.com/IBM/sarama/pull/1644
-	[v1.24.1, v1.25.0] // consumer group metadata reqs https://github.com/IBM/sarama/issues/1544
+	v1.32.0 // producer hangs on retry https://github.com/awesomeUA/sarama/issues/2150
+	[v1.31.0, v1.31.1] // producer deadlock https://github.com/awesomeUA/sarama/issues/2129
+	[v1.26.0, v1.26.1] // consumer fetch session allocation https://github.com/awesomeUA/sarama/pull/1644
+	[v1.24.1, v1.25.0] // consumer group metadata reqs https://github.com/awesomeUA/sarama/issues/1544
 )

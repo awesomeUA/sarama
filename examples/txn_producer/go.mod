@@ -1,9 +1,9 @@
-module github.com/IBM/sarama/examples/txn_producer
+module github.com/awesomeUA/sarama/examples/txn_producer
 
 go 1.19
 
 require (
-	github.com/IBM/sarama v1.43.1
+	github.com/awesomeUA/sarama v1.43.1
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475
 )
 
@@ -27,4 +27,4 @@ require (
 	golang.org/x/net v0.24.0 // indirect
 )
 
-replace github.com/IBM/sarama => ../../
+replace github.com/awesomeUA/sarama => ../../

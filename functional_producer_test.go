@@ -16,7 +16,7 @@ import (
 	"github.com/rcrowley/go-metrics"
 	"github.com/stretchr/testify/require"
 
-	"github.com/IBM/sarama/internal/toxiproxy"
+	"github.com/awesomeUA/sarama/internal/toxiproxy"
 )
 
 const TestBatchSize = 1000
@@ -906,7 +906,7 @@ func testProducingMessages(t *testing.T, config *Config, minVersion KafkaVersion
 // cleanly recover if network connectivity to the remote brokers is lost and
 // then subsequently resumed.
 //
-// https://github.com/IBM/sarama/issues/2129
+// https://github.com/awesomeUA/sarama/issues/2129
 func TestAsyncProducerRemoteBrokerClosed(t *testing.T) {
 	setupFunctionalTest(t)
 	defer teardownFunctionalTest(t)

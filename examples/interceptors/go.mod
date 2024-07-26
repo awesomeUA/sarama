@@ -1,9 +1,9 @@
-module github.com/IBM/sarama/examples/interceptors
+module github.com/awesomeUA/sarama/examples/interceptors
 
 go 1.19
 
 require (
-	github.com/IBM/sarama v1.43.1
+	github.com/awesomeUA/sarama v1.43.1
 	go.opentelemetry.io/otel v1.24.0
 	go.opentelemetry.io/otel/exporters/stdout/stdoutmetric v1.24.0
 	go.opentelemetry.io/otel/sdk v1.24.0
@@ -36,4 +36,4 @@ require (
 	golang.org/x/sys v0.19.0 // indirect
 )
 
-replace github.com/IBM/sarama => ../../
+replace github.com/awesomeUA/sarama => ../../

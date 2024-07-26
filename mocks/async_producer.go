@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/IBM/sarama"
+	"github.com/awesomeUA/sarama"
 )
 
 // AsyncProducer implements sarama's Producer interface for testing purposes.
