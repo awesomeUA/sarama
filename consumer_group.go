@@ -74,6 +74,8 @@ type ConsumerGroup interface {
 	// Resume resumes all partitions which have been paused with Pause()/PauseAll().
 	// New calls to the broker will return records from these partitions if there are any to be fetched.
 	ResumeAll()
+
+	GetConsumer() Consumer
 }
 
 type consumerGroup struct {
@@ -148,6 +150,10 @@ func newConsumerGroup(groupID string, client Client) (ConsumerGroup, error) {
 		cg.groupInstanceId = &config.Consumer.Group.InstanceId
 	}
 	return cg, nil
+}
+
+func (c *consumerGroup) GetConsumer() Consumer {
+	return c.consumer
 }
 
 // Errors implements ConsumerGroup.
